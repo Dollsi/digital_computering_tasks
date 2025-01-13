@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio</title>
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body >
     
@@ -13,12 +13,15 @@
             <div class="container">
                 <nav>
                     <img src="DS logo.png" class="logo">
-                    <ul>
+                    <ul id="sidemenu">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
-                        <li><a href="#">work</a></li>
+                        <li><a href="#">services</a></li>
+                        <li><a href="#">mywork</a></li>
                         <li><a href="#">contact</a></li>
+                        <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
                      </ul>
+                     <i class="fa-solid fa-bars" onclick="openmenu()"></i>
                 </nav>
                 <div class="header-text">
                     <p>web designer</p>
@@ -35,7 +38,7 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About me</h1><br>
-                    <p> <span class="me">Hey, I'm Dollsi sen from khandwa currently live in Indore ,statup developer specialis.I'm 
+                    <p> <span class="me">Hey, I'm Dollsi sen from khandwa currently live in Indore ,stratup developer specialist.I'm 
                         specialist in handling and managing day to day team operation with considerable experience to 
                         read trends.</span>
                         <br>
@@ -44,41 +47,111 @@
                         <h2>EDUCATION </h2>
                         <br>
                         <span  class="me">Schooling from S.R.N Excellence h.s school,khandwa</span><br>
-                       <span class="me"> Heigher education from Shri Dadaji Institute of technology and science <br>Software development <ul><li>
+                       <span class="me"> Heigher education from Shri Dadaji Institute of technology and science(Running) <br>Software development <ul><li>
                         Balanced and met multiple deadlines <li>Worked on a variety of assignments</li><li>learned multiple coding languages </li>
   </li></ul> </span>
   <br>
  </div></div>
  </div>
 
- <!-- work -->
+ <!-- services -->
  
  <div id="services">
     <div class="container">
-        <h1 class="sub-title"> Work</h1>
+        <h1 class="sub-title"> Work & services</h1>
         <div class="work-list">
             <div>
-                <h2>Web design</h2>
+                <i class="fa-solid fa-code"></i>            
+                    <h2>Web design</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur </p>
-                <a href="#">learn more</a> </div>
+                <a href="#">Learn more</a> </div>
                 <!-- web -->
             <div>
+                <i class="fa-solid fa-crop"></i>
                 <h2> Ai /Ml </h2>
                 <p>Lorem, ipsum dolor sit amet consectetur </p>
-                <a href="#">learn more</a> </div>
+                <a href="#">Learn more</a> </div>
                 <!-- Ai -->
             <div>
-                <h2>app design</h2>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App design</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur </p>
-                <a href="#">learn more</a></div>
-
-        </div>
-
-
-    </div>
+                <a href="#">Learn more</a></div>
+       </div>
  </div>
- 
-    
+ </div>
+ <!-----work------->
+ <div id="folio">
+    <div class="container"> 
+    <h1 class="sub-title"> My Work</h1>
+    <div class="folio-list">
+    <div class="work">
+        <div class="layer"><h2>calculator</h2>        <a href="calcu.html">take a look</a>
+        </div>
+        </div>
+        <!--  -->
+    <div class="work">
+        <div class="layer"><h2>insta-login</h2> 
+        </div>
+        </div>
+        <!--  -->
+    <div class="work">
+        <div class="layer"><h2> regist-form</h2> </div>
+        </div>
+        <!--  -->
+        <div class="work">
+            <div class="layer"><h2> fb-login</h2> </div>
+            </div>
+            <!--  -->
+            <div class="work">
+                <div class="layer"><h2> linkedin</h2> </div>
+                </div>
+</div>
+ </div>
+ </div>
+ </div>
+ <!-- contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <!-- ------------------contact-left----------- -->
+
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fa-solid fa-paper-plane-top"></i>dollsisen@75gmail.com</p>
+                    <p><i class="fa-duotone fa-solid fa-phone"></i>62667*****</p>
+                    <div class="social-icon">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>  </div>      
+  </div>
+                
+                <!-- ------------------contact-right----------- -->
+
+                <div class="contact-right">
+                    <form >
+                        <input type="text" name="Name" placeholder="your Name" required>
+                        <input type="email" name="email" placeholder="your Email" required>
+                        <textarea name="message" rows="6" placeholder="your message" ></textarea>
+                        <button type="submit" class="btn"> submit</button></form></div>
+
+            </div>
+        </div>
+        <!-- -------copyright----------- -->
+         <div class="copyright">
+            <p>copyright @dollsi here I hope you like it <i class="fa-solid fa-heart"></i> Thank you for visiting </p>
+         </div>
+    </div>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0"
+  }
+  function closemenu(){
+            sidemenu.style.right="-200px"
+  }
+    </script>
  
 
 
